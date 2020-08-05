@@ -7,6 +7,6 @@ public class WebService {
 
     public String TestService() {
 
-        return "test";
+        return "test1";
     }
 }
