@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="black">
+
+<form class="form-horizontal" action="upload" enctype="multipart/form-data" method="post">
+    <div class="form-group">
+        <div class="input-group col-md-4">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+            <input class="form-control" placeholder="文件描述" type="text" name="description" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group col-md-4">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+            <input class="form-control" placeholder="请选择文件" type="file" name="file"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            <div class="btn-group btn-group-justified" >
+                <div class="btn-group" >
+                    <button type="submit" class="btn btn-success" id="submitbtn">
+                        <span class="glyphicon glyphicon-share"></span>&nbsp;文件上传</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>
