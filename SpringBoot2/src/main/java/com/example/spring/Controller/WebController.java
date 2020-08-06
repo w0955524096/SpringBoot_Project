@@ -18,7 +18,7 @@ public class WebController {
 
     @RequestMapping("/")
     public String TestController() {
-        return webService.TestService()+"1";
+        return webService.TestService()+"2";
     }
 
     @RequestMapping("/url")

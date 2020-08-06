@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Consul/Consul.iml" filepath="$PROJECT_DIR$/Consul/Consul.iml" />
       <module fileurl="file://$PROJECT_DIR$/Initial/Initial.iml" filepath="$PROJECT_DIR$/Initial/Initial.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SpringBoot/spring.iml" filepath="$PROJECT_DIR$/SpringBoot/spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot/SpringBoot.iml" filepath="$PROJECT_DIR$/SpringBoot/SpringBoot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot2/SpringBoot2.iml" filepath="$PROJECT_DIR$/SpringBoot2/SpringBoot2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TestService/TestService.iml" filepath="$PROJECT_DIR$/TestService/TestService.iml" />
     </modules>
   </component>
 </project>

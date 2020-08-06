@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: testConsulApp
+  cloud:
+    consul:
+      port: 8500
+      host: localhost
+      enabled: true
+      discovery:
+        tags: port=8300
