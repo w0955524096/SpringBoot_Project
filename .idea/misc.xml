@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/SpringBoot/pom.xml" />
         <option value="$PROJECT_DIR$/Consul/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBoot2/pom.xml" />
+        <option value="$PROJECT_DIR$/BusRabbitMQ/pom.xml" />
       </list>
     </option>
   </component>

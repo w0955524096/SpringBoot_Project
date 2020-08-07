@@ -1,0 +1,18 @@
+spring:
+  #spring-cloud-bus
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  application:
+    name: BusRabbitMQ
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+
+server:
+  port: 9999
