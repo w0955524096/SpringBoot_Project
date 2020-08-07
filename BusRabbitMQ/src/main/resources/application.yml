@@ -1,3 +1,6 @@
+server:
+  port: 9999
+
 spring:
   #spring-cloud-bus
   rabbitmq:
@@ -14,5 +17,4 @@ spring:
       discovery:
         service-name: ${spring.application.name}
 
-server:
-  port: 9999
+

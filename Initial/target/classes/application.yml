@@ -8,7 +8,7 @@ spring:
     password: ptree10202
     driver-class-name: com.mysql.cj.jdbc.Driver
   application:
-    name: Initial
+    name: DaoService
   cloud:
     consul:
       host: localhost
