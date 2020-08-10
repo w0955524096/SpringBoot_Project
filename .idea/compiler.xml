@@ -10,6 +10,7 @@
         <module name="BusRabbitMQ" />
         <module name="Initial" />
         <module name="TestService" />
+        <module name="Gateway" />
         <module name="SpringBoot2" />
         <module name="Consul" />
       </profile>
@@ -17,6 +18,7 @@
     <bytecodeTargetLevel>
       <module name="BusRabbitMQ" target="1.8" />
       <module name="Consul" target="1.8" />
+      <module name="Gateway" target="1.8" />
       <module name="Initial" target="1.5" />
       <module name="SpringBoot" target="1.8" />
       <module name="SpringBoot2" target="1.8" />
@@ -27,6 +29,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="BusRabbitMQ" options="-parameters" />
       <module name="Consul" options="-parameters" />
+      <module name="Gateway" options="-parameters" />
       <module name="Initial" options="" />
       <module name="SpringBoot" options="-parameters" />
       <module name="SpringBoot2" options="-parameters" />

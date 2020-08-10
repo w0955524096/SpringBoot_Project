@@ -1,0 +1,19 @@
+server:
+  port: 7070
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: limit_route
+          uri: localhost:7070
+          predicates:
+            - After=2017-01-20T17:42:47.789-07:00[America/Denver]
+          filters:
+            - name: RequestRateLimiter
+              args:
+                key-resolver: '#{@gatewayResolver}'
+                redis-rate-limiter.replenishRate: 1
+                redis-rate-limiter.burstCapacity: 3
+  application:
+    name: gateway-limiter

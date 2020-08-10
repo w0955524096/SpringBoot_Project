@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BusRabbitMQ/BusRabbitMQ.iml" filepath="$PROJECT_DIR$/BusRabbitMQ/BusRabbitMQ.iml" />
       <module fileurl="file://$PROJECT_DIR$/Consul/Consul.iml" filepath="$PROJECT_DIR$/Consul/Consul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Gateway/Gateway.iml" filepath="$PROJECT_DIR$/Gateway/Gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/Initial/Initial.iml" filepath="$PROJECT_DIR$/Initial/Initial.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot/SpringBoot.iml" filepath="$PROJECT_DIR$/SpringBoot/SpringBoot.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot2/SpringBoot2.iml" filepath="$PROJECT_DIR$/SpringBoot2/SpringBoot2.iml" />
