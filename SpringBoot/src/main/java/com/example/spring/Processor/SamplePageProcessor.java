@@ -1,9 +1,7 @@
 package com.example.spring.Processor;
 
+import ch.qos.logback.classic.Logger;
 import com.example.spring.Entity.Csdn;
-import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.util.CollectionUtils;
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
@@ -15,10 +13,10 @@ import us.codecraft.webmagic.selector.Selectable;
 import java.util.ArrayList;
 import java.util.List;
 
-@Slf4j
+
 public class SamplePageProcessor implements PageProcessor {
 
-    private Logger log = LoggerFactory.getLogger(this.getClass());
+    // private Logger log;
 
     /**
      * 记录总分页列表url数
@@ -41,6 +39,9 @@ public class SamplePageProcessor implements PageProcessor {
             // 超时时间
                     setTimeOut(100 * 1000);
 
+    public SamplePageProcessor() {
+    }
+
     /**
      * process是定制爬虫逻辑的核心接口，在这里编写抽取逻辑
      *
@@ -57,7 +58,8 @@ public class SamplePageProcessor implements PageProcessor {
 
         // 根据url判断该页面属于列表页还是文章详情页面
         String url = page.getUrl().toString();
-        log.info("页面url地址：【{}】", url);
+
+        System.out.println("页面url地址：【{}】"+ url);
         if (url.contains("article/details")) {
             // 详情页面处理逻辑...
             // 文章id
@@ -70,7 +72,7 @@ public class SamplePageProcessor implements PageProcessor {
             String articleCategory = html.xpath("//a[@class='tag-link']//text()").toString();
             // 文章内容
             String articleContent = html.xpath("//article[@class='baidu_pl']").toString();
-            log.info("文章id：【{}】  文章标题：【{}】 文章所属分类：【{}】", articleId, articleTitle, articleCategory);
+            System.out.println("文章id：【{}】  文章标题：【{}】 文章所属分类：【{}】"+ articleId+articleTitle+ articleCategory);
             Csdn csdn = new Csdn(articleId, articleTitle, articleTime, articleCategory, articleContent);
             if (articleDetailInfoList.contains(csdn)) {
                 return;
@@ -87,7 +89,7 @@ public class SamplePageProcessor implements PageProcessor {
             if (CollectionUtils.isEmpty(articleList)) {
                 // 这里移除最后一条错误元素
                 urlList.remove(urlList.get(urlList.size() - 1));
-                log.info("总列表数：【{}】  总文章数：【{}】", urlList, articleDetailInfoList);
+                System.out.println("总列表数：【{}】  总文章数：【{}】"+urlList+articleDetailInfoList);
                 return;
             }
             // 开始解析每一篇文章数据【文章标题，发送时间，文章详情url地址】
@@ -101,7 +103,7 @@ public class SamplePageProcessor implements PageProcessor {
                         article.xpath("//div[@class='info-box d-flex align-content-center']//span[@class='date']/text()")
                                 .toString();
 
-                log.info("文章标题：【{}】 文章地址：【{}】 文章发布时间：【{}】", articleTitle, articleUrl, articleTime);
+                System.out.println("文章标题：【{}】 文章地址：【{}】 文章发布时间：【{}】"+articleTitle+ articleUrl+ articleTime);
 
                 // 进入文章内部获取文章详情内容
                 page.addTargetRequests(article.links().all());
@@ -113,7 +115,7 @@ public class SamplePageProcessor implements PageProcessor {
             page.addTargetRequest(newUrl);
         } else {
             // Other ...
-            log.error("该页面url【{}】无法解析...", url);
+            System.out.println("该页面url【{}】无法解析..."+ url);
         }
     }
 
