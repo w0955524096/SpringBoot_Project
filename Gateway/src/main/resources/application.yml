@@ -2,6 +2,9 @@ server:
   port: 7070
 
 spring:
+  #redis:
+    #host: localhost
+    #port: 6379
   cloud:
     gateway:
       routes:
@@ -15,5 +18,14 @@ spring:
                 key-resolver: '#{@gatewayResolver}'
                 redis-rate-limiter.replenishRate: 1
                 redis-rate-limiter.burstCapacity: 3
+      enabled: true
+      discovery:
+        locator:
+          enabled: true
+
   application:
     name: gateway-limiter
+management:
+  endpoint:
+    health:
+      show-details: always

@@ -18,7 +18,7 @@ consul_1.8.1_windows_amd64/
 ### IntelliJ IDEA ###
 .idea
 *.iws
-*.iml
+###*.iml ###
 *.ipr
 
 ### NetBeans ###
