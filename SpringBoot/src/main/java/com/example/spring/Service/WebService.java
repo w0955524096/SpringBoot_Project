@@ -217,6 +217,12 @@ public class WebService {
             return "error";
         }
     }
+
+    public String SpiderService() {
+
+        System.out.println(new Date());
+        return "null";
+    }
 }
 
 

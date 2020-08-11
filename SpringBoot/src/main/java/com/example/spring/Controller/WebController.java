@@ -1,13 +1,12 @@
 package com.example.spring.Controller;
 
-
 import com.example.spring.Service.WebService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.context.request.ServletWebRequest;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
-import java.io.File;
 import java.io.IOException;
 
 @RestController
@@ -18,7 +17,7 @@ public class WebController {
 
     @RequestMapping("/")
     public String TestController() {
-        return webService.TestService()+"1";
+        return webService.TestService() + "1";
     }
 
     @RequestMapping("/url")
@@ -59,4 +58,26 @@ public class WebController {
 
         return webService.UploadService(request, description, file);
     }
+
+
+    @GetMapping("/SpringService")
+    public String GatewayController(ServletWebRequest servletWebRequest) {
+
+
+
+        return servletWebRequest.getHeader("H");
+    }
+
+    /**
+     *
+     * @param servletWebRequest
+     * @return
+     */
+    @GetMapping("/Spider")
+    public String SpiderController(ServletWebRequest servletWebRequest) {
+
+
+        return "";
+    }
+
 }

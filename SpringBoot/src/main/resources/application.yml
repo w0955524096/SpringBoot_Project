@@ -1,6 +1,10 @@
 server:
   port: 6663
 
+seimi:
+  crawler:
+    enabled: true
+    names: basic
 spring:
   thymeleaf:
     prefix: classpath:/templates/
