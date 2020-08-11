@@ -16,7 +16,7 @@ public class GatewayController {
         return routeLocatorBuilder.routes().route(p -> p
                 .path("/get")
                 .filters(f -> f.addRequestHeader("Hello", "World"))
-                .uri("localhost:7070"))//http://httpbin.org:80
+                .uri("https://console-nlu.lingtelli.com/"))//http://httpbin.org:80
                 .build();
     }
 
