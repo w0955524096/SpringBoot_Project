@@ -12,7 +12,7 @@ public class TestController {
     @Autowired
     private TestService testService;
 
-    @RequestMapping("/test")
+    @RequestMapping("/test1")
     public String TestController() {
 
         return testService.TestService();
