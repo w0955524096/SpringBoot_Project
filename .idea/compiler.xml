@@ -13,6 +13,7 @@
         <module name="SpringBoot2" />
         <module name="Gateway" />
         <module name="Consul" />
+        <module name="Initial" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

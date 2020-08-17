@@ -17,11 +17,17 @@ public class GatewayController {
     public RouteLocator GatewayController(RouteLocatorBuilder routeLocatorBuilder) {
 
         return routeLocatorBuilder.routes().route(p -> p
+<<<<<<< HEAD
+                .path("/get")
+                .filters(f -> f.addRequestHeader("Hello", "World"))
+                .uri("https://console-nlu.lingtelli.com/"))//http://httpbin.org:80
+=======
                 .method(HttpMethod.GET)
                 .and()
                 .path("/SpringService")
                 .filters(f -> f.addRequestHeader("H", "Z"))
                 .uri("http://localhost:6663"))//https://console-nlu.lingtelli.com
+>>>>>>> 082eeeb232e5a32bfd8a5f4a611e3d1399ae6a3a
                 .build();
     }
 
