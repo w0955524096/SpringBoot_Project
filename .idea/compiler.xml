@@ -8,21 +8,21 @@
         <outputRelativeToContentRoot value="true" />
         <module name="SpringBoot" />
         <module name="BusRabbitMQ" />
+        <module name="demo" />
         <module name="Initial" />
-        <module name="TestService" />
-        <module name="Gateway" />
         <module name="SpringBoot2" />
+        <module name="Gateway" />
         <module name="Consul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="BusRabbitMQ" target="1.8" />
       <module name="Consul" target="1.8" />
+      <module name="demo" target="1.8" />
       <module name="Gateway" target="1.8" />
       <module name="Initial" target="1.5" />
       <module name="SpringBoot" target="1.8" />
       <module name="SpringBoot2" target="1.8" />
-      <module name="TestService" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -33,7 +33,7 @@
       <module name="Initial" options="" />
       <module name="SpringBoot" options="-parameters" />
       <module name="SpringBoot2" options="-parameters" />
-      <module name="TestService" options="-parameters" />
+      <module name="demo" options="-parameters" />
     </option>
   </component>
 </project>

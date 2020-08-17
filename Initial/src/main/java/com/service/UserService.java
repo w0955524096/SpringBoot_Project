@@ -49,10 +49,8 @@ public class UserService {
      * 模拟事务。由于加上了 @Transactional注解，如果转账中途出了意外 SnailClimb 和 Daisy 的钱都不会改变。
      */
     @Transactional
-    public void changemoney() {
-        userDao.updateUser("SnailClimb", 22, 2000.0, 3);
-        // 模拟转账过程中可能遇到的意外状况
-        int temp = 1 / 0;
-        userDao.updateUser("Daisy", 19, 4000.0, 4);
+    public void changemoney(int id, String name, Integer age, Double money) {
+
+        userDao.updateUser(id, name, age, money);
     }
 }

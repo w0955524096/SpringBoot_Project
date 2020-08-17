@@ -1,7 +1,9 @@
 package com.dao;
 
 import com.bean.User;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
@@ -32,8 +34,7 @@ public interface UserDao {
      * 根据 id 更新用户信息
      */
     @Update("UPDATE  user SET name = #{name},age = #{age},money= #{money} WHERE id = #{id}")
-    void updateUser(@Param("name") String name, @Param("age") Integer age, @Param("money") Double money,
-                    @Param("id") int id);
+    void updateUser(@Param("id") int id, @Param("name") String name, @Param("age") Integer age, @Param("money") Double money);
 
     /**
      * 根据 id 删除用户信息
