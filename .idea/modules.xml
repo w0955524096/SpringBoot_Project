@@ -8,8 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/Initial/Initial.iml" filepath="$PROJECT_DIR$/Initial/Initial.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot/SpringBoot.iml" filepath="$PROJECT_DIR$/SpringBoot/SpringBoot.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot2/SpringBoot2.iml" filepath="$PROJECT_DIR$/SpringBoot2/SpringBoot2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tool/Tool.iml" filepath="$PROJECT_DIR$/Tool/Tool.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Tool/demo (1).iml" filepath="$PROJECT_DIR$/Tool/demo (1).iml" />
     </modules>
   </component>
 </project>

@@ -8,7 +8,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SpringBoot2" />
-        <module name="demo (1)" />
         <module name="Gateway" />
         <module name="SpringBoot" />
         <module name="BusRabbitMQ" />
@@ -22,12 +21,11 @@
       <module name="BusRabbitMQ" target="1.8" />
       <module name="Consul" target="1.8" />
       <module name="demo" target="1.8" />
-      <module name="demo (1)" target="1.8" />
       <module name="Gateway" target="1.8" />
       <module name="Initial" target="1.5" />
       <module name="SpringBoot" target="1.8" />
       <module name="SpringBoot2" target="1.8" />
-      <module name="Tool" target="1.5" />
+      <module name="Tool" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -38,8 +36,8 @@
       <module name="Initial" options="" />
       <module name="SpringBoot" options="-parameters" />
       <module name="SpringBoot2" options="-parameters" />
+      <module name="Tool" options="-parameters" />
       <module name="demo" options="-parameters" />
-      <module name="demo (1)" options="-parameters" />
     </option>
   </component>
 </project>
